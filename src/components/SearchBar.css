@@ -1,0 +1,377 @@
+/* SearchBar.css */
+
+/* Center the entire search component */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    height: 100%; /* Full viewport height */
+    background-color: #151522;
+  }
+  
+/* Style for the search bar and button */
+.search-bar {
+    display: flex;
+    width: 82vw; /* Total width for the search area */
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+/* Style for the input field */
+.search-bar input {
+    width: 70%; /* 70% of the width */
+    padding: 1vw;
+    font-size: 4vw;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Style for the button */
+.search-bar button {
+    width: 30%; /* 30% of the width */
+    padding: 10px;
+    font-size: 4vw;
+    background-color: #222339; /* Green background color */
+    color: white;
+    border: 1px solid #222339;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in; 
+}
+
+.search-bar button:hover {
+    background-color: #40436f; /* Darker green on hover */
+}
+
+  
+  /* Style for each search result container */
+  .search-result-container {
+    display: flex;
+    background-color: #222339;
+    width: 80vw; /* Container width */
+    height: 20vw; /* Container height */
+    color: white;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+    align-items: center;
+  }
+  
+  /* Style for the image */
+  .search-result-container img {
+    width: auto; /* Half the width of the container */
+    height: 100%; /* Full height of the container */
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-right: 2vw;
+  }
+  
+  /* Container for text next to the image */
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; /* Half the width of the container */
+  }
+  
+  /* Style for the track name */
+  .track-name {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-bottom: 2px; /* Space between track name and artist name */
+  }
+  
+  /* Style for the artist name */
+  .artist-name {
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+    font-size: 3vw;
+  }
+  
+
+  .add-button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 8vw;
+    color: white;
+    background: transparent;
+    border: .7vw solid white;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in, border 0.15s ease-in;
+  }
+  
+  .add-button:hover {
+    background-color: rgba(195, 195, 195, 0.2);
+  }
+  
+  .add-button.active {
+    background-image: linear-gradient(45deg, #38ef7d, #11998e);
+    border: transparent; 
+  }
+
+  .remove-button {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 5vw;
+    color: white;
+    background-color: rgba(255, 53, 53, 0.36);
+    border: .7vw solid #ff3333;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    margin-left: 2vw;
+  }
+
+  .remove-button:hover {
+    background-color: #ff3333;
+  }
+
+/* Default navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15vw;
+  padding: 0 12vw;
+  box-sizing: border-box;
+  background-color: #262b3e;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-item.middle {
+  margin-bottom: 8vw;
+}
+
+.navbar img {
+  height: 8vw;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+}
+
+.navbar p {
+  color: #adadad;
+  margin: 0.5vw 0;
+  font-size: 2.5vw;
+}
+
+.navbar-item.middle p {
+  color: #adadad;
+  font-size: 2.5vw;
+  margin-top: 2vw;
+}
+
+.request-button {
+  font-family: Comfortaa;
+  font-weight: 500;
+  font-size: 11vw;
+  color: white;
+  background-image: linear-gradient(135deg, #333399, #ff00cc);
+  border: 0vw white;
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.request-button:hover {
+  transform: scale(1.05);
+}
+
+
+
+@media (min-width: 1000px) {
+  .search-container {
+    padding: 0 40vw;
+  }
+  
+/* Style for the search bar and button */
+.search-bar {
+    display: flex;
+    width: 52vw; /* Total width for the search area */
+    margin-bottom: .5vw;
+    margin-top: .5vw;
+}
+
+/* Style for the input field */
+.search-bar input {
+    width: 70%; /* 70% of the width */
+    padding: 1vw;
+    font-size: 2vw;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Style for the button */
+.search-bar button {
+    width: 30%; /* 30% of the width */
+    padding: 0vw;
+    font-size: 2vw;
+    background-color: #222339; /* Green background color */
+    color: white;
+    border: 1px solid #222339;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in; 
+}
+
+.search-bar button:hover {
+    background-color: #40436f; /* Darker green on hover */
+}
+
+  
+  /* Style for each search result container */
+  .search-result-container {
+    display: flex;
+    background-color: #222339;
+    width: 50vw; /* Container width */
+    height: 10vw; /* Container height */
+    color: white;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+
+  .search-result-container img {
+    width: auto; /* Half the width of the container */
+    height: 100%; /* Full height of the container */
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-right: 2vw;
+  }
+  
+  /* Container for text next to the image */
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; /* Half the width of the container */
+  }
+  
+  /* Style for the track name */
+  .track-name {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 0vw; /* Space between track name and artist name */
+    margin-top: 1vw;
+  }
+  
+  /* Style for the artist name */
+  .artist-name {
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+    font-size: 2vw;
+  }
+  
+
+  .add-button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 5vw;
+    color: white;
+    background: transparent;
+    border: .4vw solid white;
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in, border 0.15s ease-in;
+    margin-left: 3vw;
+  }
+
+  .remove-button {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    color: white;
+    background-color: rgba(255, 53, 53, 0.36);
+    border: .7vw solid #ff3333;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    margin-left: 2vw;
+  }
+
+
+
+
+  .navbar {
+    height: 6vw;
+    padding: 0 33vw;
+  }
+
+  .navbar img {
+    height: 3vw;
+  }
+
+  .navbar p {
+    font-size: 1vw;
+    margin: 0.5vw 0;
+  }
+
+  .navbar-item.middle p {
+    font-size: 1vw;
+    margin-top: 1vw;
+  }
+
+  .navbar-item.middle {
+    margin-bottom: 2.8vw;
+  }
+
+  .request-button {
+    font-size: 4.5vw;
+    width: 4vw;
+    height: 4vw;
+    transition: transform 0.2s ease;
+  }
+
+  .request-button:hover {
+    transform: scale(1.05);
+  }
+}
+
+  /* Optional: Add a global font import */
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+  

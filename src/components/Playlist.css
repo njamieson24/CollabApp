@@ -1,0 +1,30 @@
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    background-color: #151522;
+    
+  }
+  
+  /* Sticky header for the playlist */
+  .playlist-header {
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%; /* Full width */
+    background-color: #4a4a90; /* Background color */
+    padding: 1vw;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Shadow for better visibility */
+  }
+  
+  /* Title styling */
+  .playlist-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 7vw;
+    margin: 0; /* Remove default margin */
+    color: white; /* Ensure text is visible on dark background */
+    margin-bottom: 2vw;
+  }
+
