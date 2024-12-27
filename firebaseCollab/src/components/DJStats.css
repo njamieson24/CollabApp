@@ -1,0 +1,66 @@
+/* General container styling */
+.dj-stats-container {
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    width: 60%; /* Restrict content width */
+    margin: 40px auto; /* Center the content horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(186, 116, 255, 0.3);
+  }
+  
+  /* Title styling */
+  .dj-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #bb86fc; /* Purple hue */
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: #ff4d4d; /* Light red for errors */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Chart container */
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Fixed height for chart */
+    margin-bottom: 20px;
+    background-color: #1f1f1f; /* Slightly lighter dark background */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Song list styling */
+  .song-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    text-align: center;
+  }
+  
+  .song-item {
+    background-color: #242424; /* Dark card background */
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    color: #d1c4e9; /* Light purple text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+  }
+  
+  .song-item strong {
+    color: #bb86fc; /* Highlighted purple hue for song name */
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
